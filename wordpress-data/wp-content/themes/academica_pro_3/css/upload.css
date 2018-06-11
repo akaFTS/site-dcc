@@ -1,0 +1,35 @@
+/**
+ * Widgets - Image Box Uploader
+ */
+
+.wpzoom-media-container {
+	width: 98%;
+}
+
+.wpzoom-media-inner {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+	border-radius: 2px;
+	margin-bottom: 10px;
+}
+
+.widget-description img,
+.wpzoom-media-inner img {
+	max-width: 100%;
+	height: auto;
+}
+
+.wpzoom-media-url {
+	display: none;
+}
+
+.wpzoom-media-remove {
+	float: left;
+	width: 48%;
+}
+
+.wpzoom-media-upload {
+	float: right;
+	width: 48%;
+}

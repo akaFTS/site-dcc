@@ -1,0 +1,39 @@
+Academica Pro 3.0 Theme
+http://www.wpzoom.com/themes/academica-pro-3/
+
+CHANGELOG
+---------
+
+v 3.0.2 (March 23, 2018)
+
+    - style.css - fixed some minor Accessibility issues
+
+
+v 3.0.1 (November 22, 2017)
+
+    - Fixing a minor bug in WordPress 4.9
+
+
+v 3.0.0 (June 8, 2017)
+
+    IMPORTANT: THIS IS A MAJOR UPDATE AND WE RECOMMEND YOU TO CREATE A BACKUP OF YOUR PREVIOUS VERSION IN CASE SOMETHING GOES WRONG.
+
+    - The theme was re-designed and features a new modern layout with new homepage templates and other features.
+    - New Features:
+        - WooCommerce integration
+        - New page templates for homepage
+        - New customization options in Customizer (Fonts, Colors)
+        - New widget area in the header for Social Icons
+        - New widget: Image Box
+        - 3 new widget areas on homepage below slideshow (3 columns for Image Box widget).
+        - New top menu
+        - Featured Slider now supports static Pages
+        - Improvements to mobile layout (content appears at the top and sidebars below it)
+        - Added support for Yoast SEO Breadcrumbs
+        - Added support for Retina/Responsive images
+        - Header Options in Customizer
+
+        - Added support for WordPress native Logo (Customizer > Site Identity)
+        - A better mobile menu (+ new menu location for mobile)
+    - Numerous improvements and bug fixes
+    *** Thumbnails regeneration is needed if you update from an older version - http://www.wpzoom.com/tutorial/fixing-stretched-images/
