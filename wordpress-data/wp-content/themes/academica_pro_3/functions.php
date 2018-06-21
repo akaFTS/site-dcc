@@ -52,3 +52,14 @@ function show_logout_link() {
 }
 add_shortcode('current-user', 'show_loggedin_function');
 add_shortcode('logout', 'show_logout_link');
+
+function oauth_login( $data ) {  
+	return "oi";
+}
+
+add_action( 'rest_api_init', function () {
+	register_rest_route( 'oauth', '/login', array(
+	  'methods' => 'GET',
+	  'callback' => 'oauth_login',
+	));
+});
