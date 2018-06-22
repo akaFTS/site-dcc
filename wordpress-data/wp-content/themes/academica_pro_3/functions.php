@@ -38,28 +38,4 @@ require_once FUNC_INC . "/widgets/image-box.php";
 require_once FUNC_INC . "/woocommerce.php";
 
 /* CUSTOM FUNCTIONS */
-add_filter('widget_text', 'do_shortcode');
-add_filter('widget_title', 'do_shortcode');
-
-function show_loggedin_function( $atts ) {
-	global $current_user, $user_login;
-	get_currentuserinfo();
-		return $current_user->display_name;
-}
-
-function show_logout_link() {
-    return '<a href="'.wp_logout_url(home_url()).'">Sair</a>';
-}
-add_shortcode('current-user', 'show_loggedin_function');
-add_shortcode('logout', 'show_logout_link');
-
-function oauth_login( $data ) {  
-	return "oi";
-}
-
-add_action( 'rest_api_init', function () {
-	register_rest_route( 'oauth', '/login', array(
-	  'methods' => 'GET',
-	  'callback' => 'oauth_login',
-	));
-});
+require_once $_SERVER['DOCUMENT_ROOT'] . "/functions.php";
