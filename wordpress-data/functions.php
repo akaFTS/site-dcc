@@ -78,7 +78,7 @@ function get_next_thesis() {
 	));
 	$events = array_filter($events, "is_defense");
 
-	return generate_event_widget($events, '<a href="http://localhost:8080/events/categoria/defesas">Ver Todas as Defesas</a>');
+	return generate_event_widget($events, '<a href="'.home_url().'/events/categoria/defesas">Ver Todas as Defesas</a>');
 
 }
 add_shortcode('next-thesis', 'get_next_thesis');
@@ -90,7 +90,7 @@ function get_next_events() {
 	));
 	$events = array_filter($events, "is_not_defense");
 
-	return generate_event_widget($events, '<a href="http://localhost:8080/events/">Ver Todos os Eventos</a>');	
+	return generate_event_widget($events, '<a href="'.home_url().'/events/">Ver Todos os Eventos</a>');	
 }
 add_shortcode('next-events', 'get_next_events');
 
