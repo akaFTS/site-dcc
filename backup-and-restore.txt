@@ -1,0 +1,7 @@
+# Dumping mysql database (with container online)
+docker-compose exec mysql /usr/bin/mysqldump -u root --password=testedcc wordpress > backup.sql
+
+# You may need to remove the first line where there's a mysql warning
+
+# Recreating mysql database (container online, make sure root user and wordpress database exists)
+cat backup.sql | docker-compose exec -T mysql /usr/bin/mysql -u root --password=testedcc wordpress
