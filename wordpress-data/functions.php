@@ -58,7 +58,7 @@ function generate_event_widget($events, $footer_link) {
 				</div>
 				<div class="tribe-flex-text">
 					<h4 class="tribe-event-title">
-						<a href="http://localhost:8080/event/'.$event->post_name.'/" rel="bookmark">'.$event->post_title.'</a>
+						<a href="http://'.home_url().'/event/'.$event->post_name.'/" rel="bookmark">'.$event->post_title.'</a>
 					</h4>
 					<div class="tribe-event-duration">
 						<b>'.$local.'</b> • <span class="tribe-event-date-start">'.$hour.'</span>				
